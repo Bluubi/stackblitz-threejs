@@ -1,9 +1,9 @@
 import * as THREE from 'three';
-import { mesh } from './threejs/basics/mesh';
-import { camera } from './threejs/basics/camera';
+import { scene } from './threejs/basics/scene';
+import { camera } from './threejs/basics/elements/camera';
 
 const webGLRender = new THREE.WebGLRenderer();
 
-webGLRender.render(mesh, camera);
+webGLRender.render(scene, camera);
 
 document.querySelector('#app').appendChild(webGLRender.domElement);
